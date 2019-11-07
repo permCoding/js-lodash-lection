@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 // сгенерировать массив, заполнить
 let count = 10;
 let dig = 8;
@@ -34,3 +36,14 @@ Object.keys(arr.keys()).forEach(key => console.log(key));
 Object.keys(arr.keys()).forEach(key => console.log(arr[key]));
 // а через spread работает - заполним массив
 console.log([...arr.keys()].map(item => dig))
+
+
+
+let arrayObj = [
+	{ id: 1, 'name': 'BBB' },
+	{ id: 2, 'name': 'AAA' }];
+
+_
+	.sortBy(arrayObj, obj => obj.name)
+	.map(obj => console.log(obj.name));
+console.log(arrayObj);

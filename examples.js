@@ -68,11 +68,26 @@ function ex_5() {
 	arr_2[1].name = 'CCC';
 
 	console.log(arr_1);
-	console.log(arr_2);	
+	console.log(arr_2);
 }
 
-
 function ex_6() {
+	let arr_1 = [obj_A, obj_B];
+	let arr_2 = [];
+	for (let item of arr_1) {
+		arr_2.push(_.clone(item));
+	}
+
+	console.log(arr_1);
+	console.log(arr_2);
+
+	arr_2[1].name = 'CCC';
+
+	console.log(arr_1);
+	console.log(arr_2);
+}
+
+function ex_7() {
 	let arr_1 = [obj_A, obj_B];
 	let arr_2 = _.cloneDeep(arr_1);
 
@@ -80,9 +95,9 @@ function ex_6() {
 	console.log(arr_2);
 
 	arr_2[1].name = 'CCC';
-	
+
 	console.log(arr_1);
-	console.log(arr_2);	
+	console.log(arr_2);
 }
 
 
@@ -93,3 +108,4 @@ module.exports.ex_3 = ex_3;
 module.exports.ex_4 = ex_4;
 module.exports.ex_5 = ex_5;
 module.exports.ex_6 = ex_6;
+module.exports.ex_7 = ex_7;

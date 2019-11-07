@@ -1,6 +1,6 @@
 const fs = require('fs');
-const csvjson = require('csvjson');
-const fastcsv = require('fast-csv');
+const csvjson = require('csvjson'); // npm install csvjson
+const fastcsv = require('fast-csv'); // npm install fast-csv
 
 class Curator{
 	constructor(id,nameCur){
@@ -21,7 +21,7 @@ function write_to_csv(array, nameFile) {
 		.pipe(fw);
 }
 
-function insert(array, nameCurator) {	
+function insert(array, nameCurator) {
 	// next = array.length + 1;
 	next = +array[array.length-1].id + 1;
 	obj = new Curator(next,nameCurator);
