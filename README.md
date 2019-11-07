@@ -10,8 +10,10 @@ Spread + iterators
 csv + lodash + эмуляция запросов  
 
 ---
+
 Сайт библиотеки: https://lodash.com/  
 Документация: https://lodash.com/docs/4.17.15  
+
 ---
 
 ## FP libraries for JS  
