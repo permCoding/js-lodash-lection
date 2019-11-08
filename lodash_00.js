@@ -34,7 +34,7 @@ func = _.overSome([a, b]);
 console.log(func(3));
 
 a = Boolean;
-b = x => x%2 != 0;
+b = x => x%2 == 0;
 func = _.overEvery([a, b]);
 console.log(func(3));
 
