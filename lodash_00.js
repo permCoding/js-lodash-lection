@@ -95,6 +95,13 @@ let users = [
   { 'name': 'barney', 'age': 36 }
 ];
 // версия 1 - обычный подход
+// www = users.map(x=>x.age>17);
+users
+	.sort((a,b) => a.name>b.name)
+	.map(x => console.log(x));
+console.log(users); // проверка сохранения чистоты функций
+console.log();
+
 _
 	.sortBy(users, obj => obj.name)
 	.map(obj => console.log(obj));
@@ -104,6 +111,8 @@ _
 _
 	.sortBy(_.reverse(_.sortBy(users, obj => obj.age)), obj => obj.name)
 	.map(obj => console.log(obj));
+
+console.log(users); // проверка сохранения чистоты функций
 
 // версия 2 - параметры сортировки
 // шаг 1: сортируем по полю `user` по возрастанию 
