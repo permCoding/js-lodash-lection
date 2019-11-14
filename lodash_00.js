@@ -118,7 +118,7 @@ console.log(users); // проверка сохранения чистоты фу
 // шаг 1: сортируем по полю `user` по возрастанию 
 // шаг 2: сортируем по полю `age` по убыванию
 _
-	.orderBy(users, ['name', 'age'], ['asc', 'desc'])
+	.orderBy(users, ['name', 'age'], ['asc', 'desc']) // lodash!!!
 	.map(obj => console.log(obj));
 
 console.log(users); // проверка сохранения чистоты функций
