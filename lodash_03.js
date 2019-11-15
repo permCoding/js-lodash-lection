@@ -12,10 +12,11 @@ let array = ut.csv_to_json('students.csv');
 
 // три способа копирования массивов объектов
 // let students = array; // --
-// let students = JSON.parse(JSON.stringify(array)) // +-
+// let students = JSON.parse(JSON.stringify(array)) // +- работает правильно, но не быстро
 let students = _.cloneDeep(array); // ++
 console.log(students);
 
+//
 let womens = _.remove(students, obj => obj.sex == false);
 console.log(womens);
 console.log(students);

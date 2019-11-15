@@ -5,7 +5,7 @@ students = ut.csv_to_json('students.csv');
 merge = ut.csv_to_json('merge.csv');
 hobby = ut.csv_to_json('hobby.csv');
 
-/* 
+/*
 	- запрос типа SELECT
 	- эмуляция связи многие-ко-многим
 	- выбрать все хобби определённого студента
